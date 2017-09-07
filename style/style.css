@@ -11,25 +11,77 @@ a, a:hover {
   text-decoration: none; }
 
 body {
-  background: #F5F5F5; }
+  background: #F5F5F5;
+  font-family: 'Playfair Display', serif;
+  overflow: hidden; }
 
-.main_wrapper {
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 35px;
+  text-transform: capitalize;
+  color: #313142; }
+
+.first_screen {
+  height: 100vh;
+  position: relative; }
+
+.main_wrapper .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px; }
+  .main_wrapper .container .each_box {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    margin: 15px;
+    float: left;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    color: #fff;
+    font-size: 68px;
+    text-align: center;
+    line-height: 215px; }
+    .main_wrapper .container .each_box:hover {
+      transform: scale(1.05); }
+
+.second_screen {
+  height: 100vh;
+  transition: all .5s;
+  position: relative; }
+  .second_screen h1 {
+    color: #fff; }
+  .second_screen .second_screen_each_box {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    float: left;
+    margin-right: 20px;
+    color: #333;
+    font-size: 68px;
+    text-align: center;
+    line-height: 215px; }
+    .second_screen .second_screen_each_box:hover {
+      transform: scale(1.05); }
+
+.third_screen {
+  height: 100vh;
+  transition: all .5s;
   position: relative;
-  height: 100vh; }
-  .main_wrapper .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1200px; }
-    .main_wrapper .container .each_box {
-      height: 200px;
-      width: 200px;
-      border-radius: 5px;
-      background: red;
-      margin: 15px;
-      float: left;
-      cursor: pointer;
-      transition: all .5s ease-out; }
+  background-color: #fff; }
+  .third_screen h1 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .third_screen h2 {
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px; }
 
 /*# sourceMappingURL=style.css.map */
